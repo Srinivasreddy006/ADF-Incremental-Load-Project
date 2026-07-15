@@ -1,0 +1,29 @@
+{
+	"name": "PL_SetVariablePractice",
+	"properties": {
+		"activities": [
+			{
+				"name": "Filename",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Filename",
+					"value": "customer.csv"
+				}
+			}
+		],
+		"variables": {
+			"Filename": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-07-11T11:09:33Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

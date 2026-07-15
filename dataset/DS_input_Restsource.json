@@ -1,0 +1,13 @@
+{
+	"name": "DS_input_Restsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_input_Restsource",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

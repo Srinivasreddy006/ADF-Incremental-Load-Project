@@ -1,0 +1,20 @@
+{
+	"name": "DS_Output_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Output_Parquet1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "outputrestapiparquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,59 @@
+{
+	"name": "PL_AppendVariablePractice",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append Variable",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FileList",
+					"value": "Sales.csv"
+				}
+			},
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [
+					{
+						"activity": "Append Variable",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FileList",
+					"value": "orders.csv"
+				}
+			},
+			{
+				"name": "Append variable2",
+				"type": "AppendVariable",
+				"dependsOn": [
+					{
+						"activity": "Append variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FileList",
+					"value": "customer.csv"
+				}
+			}
+		],
+		"variables": {
+			"FileList": {
+				"type": "Array"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-07-11T11:30:27Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

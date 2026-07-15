@@ -1,0 +1,18 @@
+{
+	"name": "DS_Input_blobtxt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Input_blobtxt",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "inputtextblob"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

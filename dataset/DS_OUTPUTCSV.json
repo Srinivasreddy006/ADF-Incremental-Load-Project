@@ -1,0 +1,20 @@
+{
+	"name": "DS_OUTPUTCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_OUTPUTCSV",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "outputadlscsv"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

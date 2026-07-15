@@ -1,0 +1,13 @@
+{
+	"name": "DS_Input_RESTAPI",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Input_RESTAPI",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,18 @@
+{
+	"name": "DS_Outputblobtext",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_Outputblobtext",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "ouputadlstext"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
